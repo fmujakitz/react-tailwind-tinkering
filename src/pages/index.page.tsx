@@ -1,23 +1,13 @@
-import { useState } from 'react'
-
 export const meta = { title: "Home" }
 
 export const Page = () => {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <h1>Home</h1>
-      <section className='mt-4'>
-        <button
-          className='bg-slate-600 text-white px-5 py-2 rounded'
-          onClick={() => setCount(c => c + 1)}>
-          Count is: {count}
-        </button>
-      </section>
-      <section className='mt-4'>
-        <a href="/about">About</a>
-      </section>
-    </>
+    <div className="flex flex-col">
+      <h1 className="font-bold text-2xl">Heading 1</h1>
+      <p className="indent-4 mt-4">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis dignissimos vel similique itaque, molestiae suscipit, doloribus, inventore incidunt laboriosam dolor molestias quam quia officia eaque dicta illum nemo unde possimus!
+      </p>
+    </div>
   )
 }

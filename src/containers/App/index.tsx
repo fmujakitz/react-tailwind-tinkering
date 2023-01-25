@@ -1,3 +1,5 @@
+import Content from 'components/Content'
+import { Sidebar } from 'components/Sidebar'
 import React from 'react'
 import { Helmet, HelmetProvider, HelmetServerState } from 'react-helmet-async'
 import './index.css'
@@ -30,9 +32,10 @@ const App: React.FunctionComponent<AppProps> =
           <title>{meta?.title}</title>
           <meta name="description" content={meta?.description || DEFAULT.description} />
         </Helmet>
-        <div>
+        <Sidebar />
+        <Content>
           {children}
-        </div>
+        </Content>
       </HelmetProvider>
     )
   }
